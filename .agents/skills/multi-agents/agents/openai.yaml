@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi Agents"
+  short_description: "Delegate implementation and verification"
+  default_prompt: "Use $multi-agents to implement this through independent workers and verifiers."
