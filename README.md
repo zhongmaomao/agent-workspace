@@ -79,6 +79,9 @@ cp -R agent-workspace/.agents/skills/ponytail /path/to/project/.agents/skills/
 
 ## First use
 
+`grill-with-tree` and `multi-agents` both disable implicit invocation. Mention
+the skill explicitly when you want to start either workflow.
+
 Align a requirement and produce a plan:
 
 > Use `$grill-with-tree` to inspect the current code and documentation and
@@ -150,6 +153,7 @@ their latest versions. Merge manually first if you keep local modifications.
 ├── .agents/
 │   └── skills/
 │       ├── grill-with-tree/
+│       │   ├── agents/openai.yaml
 │       │   ├── SKILL.md
 │       │   └── scripts/decision_tree.py
 │       ├── multi-agents/

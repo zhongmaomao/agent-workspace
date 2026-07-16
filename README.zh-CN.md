@@ -60,6 +60,8 @@ cp -R agent-workspace/.agents/skills/ponytail /path/to/project/.agents/skills/
 
 ## 首次调用
 
+`grill-with-tree` 和 `multi-agents` 都关闭了隐式调用。需要启动对应工作流时，必须在提示词中明确点名。
+
 先对齐需求并生成计划：
 
 > 使用 `$grill-with-tree` 检查当前代码和文档，对齐这个需求。保持只读，只产出决策树和执行计划：……
@@ -113,6 +115,7 @@ git -C agent-workspace pull --ff-only
 ├── .agents/
 │   └── skills/
 │       ├── grill-with-tree/
+│       │   ├── agents/openai.yaml
 │       │   ├── SKILL.md
 │       │   └── scripts/decision_tree.py
 │       ├── multi-agents/
